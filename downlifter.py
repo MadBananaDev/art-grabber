@@ -8,7 +8,7 @@ import time
 from tqdm import tqdm
 
 # Base URL of the webpage to scrape
-base_url = "https://ipfs.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/"
+base_url = "https://madbananaapi.vercel.app/api/"
 
 # Function to extract image link from metadata
 def extract_image_link(metadata):
@@ -35,11 +35,11 @@ last_processed_image = max(existing_images) if existing_images else 0
 
 # Define the range for this instance
 start_image_number = last_processed_image + 1
-end_image_number = start_image_number + 2000000
+end_image_number = start_image_number + 6969
 total_images = end_image_number - start_image_number
 
 # Fun prints for user engagement
-print("🚀 Let's get scraping some cool images and metadata!")
+print("🍌 Maddening images and metadata Madness -->!incoming")
 
 # Iterate through each number within the specified range
 for i in tqdm(range(start_image_number, end_image_number), total=total_images, desc="Scraping Progress"):
