@@ -67,7 +67,7 @@ for i in tqdm(range(start_image_number, end_image_number), total=total_images, d
                 img = Image.open(img_filename)
                 img_resized = img.resize((1000, 1000))
                 img_resized.save(img_filename)
-                time.sleep(2)
+                time.sleep()
             else:
                 print(f"🤔 Hmm, couldn't download the image. Status: {img_response.status_code}")
         else:
@@ -78,6 +78,6 @@ for i in tqdm(range(start_image_number, end_image_number), total=total_images, d
             file.write(str(i))
     except Exception as e:
         print(f"💥 Oops! Something went wrong: {e}")
-        time.sleep(5)
+        time.sleep()
 
 print("👍 All done! Check out the images and metadata you've collected!")
